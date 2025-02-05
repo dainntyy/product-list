@@ -1,0 +1,48 @@
+.product-image {
+    position: relative;
+    display: inline-block;
+}
+
+.product-card {
+    background-color: transparent !important;
+}
+
+.picked-image {
+    border: 3px solid hsl(14, 86%, 42%);
+}
+
+.add-to-cart-button {
+    position: sticky;
+    z-index: 2;
+    background-color: white;
+    transform: translateY(-50%);
+    color: black;
+}
+
+.add-to-cart-button:hover {
+    background-color:hsl(13, 31%, 94%);
+    color: #C73B0F;
+}
+.add-to-cart-button:hover:focus:active {
+    background-color:hsl(13, 31%, 94%);
+    color: #C73B0F;
+}
+
+.button-group {
+    background-color: #C73B0F;
+}
+
+.button-group {
+    position: sticky;
+    z-index: 2;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.quantity-button:hover {
+    background-color: #a02e0c;
+}
+
+.quantity-button:hover:focus:active {
+    background-color: #a02e0c;
+}

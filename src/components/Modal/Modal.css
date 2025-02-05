@@ -1,0 +1,15 @@
+.close-modal-btn {
+    background-color: hsl(14, 86%, 42%);
+    border: none;
+}
+
+.order-item {
+    background-color: hsl(20, 50%, 98%);
+    border-bottom: 1px solid hsl(13, 31%, 94%);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+.order-box {
+    background-color: hsl(20, 50%, 98%);
+}

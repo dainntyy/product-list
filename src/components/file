@@ -1,0 +1,33 @@
+<Row xs={1} md={2} lg={3} className="g-4">
+            {data.map((item) => (
+                <Col key={item.id}>
+                    <Card className='product-card border-0 p-3'>
+                        {/* using <picture> for adaptive images */}
+                        <picture>
+                            <source srcSet={item.image.desktop} media="(min-width: 1024px)" />
+                            <source srcSet={item.image.tablet} media="(min-width: 768px)" />
+                            <source srcSet={item.image.mobile} media="(min-width: 480px)" />
+                            <img 
+                                src={item.image.thumbnail} 
+                                alt={item.name} 
+                                className="rounded img-fluid"
+                            />
+                        </picture>
+                        {/* <Card.Img className='product-image rounded mb-2' variant="top" src={item.image.desktop} alt={item.name} /> */}
+                        <Card.Body className='product-body d-flex flex-column align-items-start m-0 p-0'>
+                            
+                            {/* <div className='d-flex flex-column align-items-center w-100'>
+                                <Button variant='outline-danger' className='add-to-cart-button fw-semibold rounded-pill d-flex align-items-center gap-2' onClick={() => addToCart(item)}>
+                                    <img src={require('../../assets/images/icon-add-to-cart.svg').default} />Add to Cart
+                                </Button>
+                            </div> */}
+                            <div className=' d-flex flex-column align-items-start m-0 p-0'>
+                                <Card.Text className='category text-secondary'>{item.category}</Card.Text>
+                                <Card.Title className='product-title fw-semibold'>{item.name}</Card.Title>
+                                <Card.Text className='price text-danger fw-bold fs-5'>${item.price.toFixed(2)}</Card.Text>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            ))}
+        </Row>

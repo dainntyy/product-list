@@ -1,0 +1,23 @@
+.cart-bar {
+    background-color: white;
+    padding: 10%;
+    min-height: 20rem;
+    max-width: 30rem;
+}
+
+.carbon-box {
+    background-color: hsl(20, 50%, 98%);
+}
+
+.confirm-order-btn {
+    background-color: hsl(14, 86%, 42%);
+    border: none;
+}
+
+.cart-item-quantity {
+    color: hsl(14, 86%, 42%);
+}
+
+.info-container {
+    color: hsl(12, 20%, 44%);
+}

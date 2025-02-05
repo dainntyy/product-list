@@ -1,6 +1,6 @@
 export interface Product {
     id: number;
-    image: { desktop: string };
+    image: {desktop: string} & {mobile: string} & {tablet: string} & {thumbnail: string};
     name: string;
     category: string;
     price: number;
